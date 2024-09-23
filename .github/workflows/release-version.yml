@@ -2,13 +2,14 @@ name: Publish new theme version
 
 on:
   push:
-    # Sequence of patterns matched against refs/tags
     tags:
-      - "*" # Push events to matching any tag format, i.e. 1.0, 20.15.10
+      - "*"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # allows the action to create a release.
 
     steps:
       - uses: actions/checkout@v3
