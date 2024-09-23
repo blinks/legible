@@ -2,7 +2,8 @@
 An Obsidian theme.
 
 ## Release
+Fire off `npm version` to increment and push a version bump.
 
 ```
-$ VERSION="0.1.0"; git tag -a -m "$VERSION" $VERSION && git push origin $VERSION
+$ npm version patch
 ```
